@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Black Hole Web · Gargantua from Interstellar, ray-traced in your browser</title>
+  <meta name="description" content="Look, a black hole. Fly around Gargantua from Interstellar, ray-traced in real time through Kerr spacetime with real physics: lensing, photon ring, Doppler beaming and a Novikov–Thorne disk." />
+  <meta name="keywords" content="black hole, Gargantua, Interstellar, Kerr metric, general relativity, ray tracing, WebGL, accretion disk, gravitational lensing, simulation" />
+  <meta name="author" content="Happyuky7" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="%SITE_URL%/" />
+  <meta name="theme-color" content="#e4ab72" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Icons & install -->
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="./icons/icon-192.png" type="image/png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+
+  <!-- Open Graph: Discord, WhatsApp, Facebook, LinkedIn, Telegram… -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Black Hole Web" />
+  <meta property="og:title" content="Black Hole Web · Gargantua, Interstellar style" />
+  <meta property="og:description" content="Look, a black hole. Fly around Gargantua, ray-traced through real Kerr spacetime in your browser." />
+  <meta property="og:url" content="%SITE_URL%/" />
+  <meta property="og:image" content="%SITE_URL%/og-image.jpg" />
+  <meta property="og:image:secure_url" content="%SITE_URL%/og-image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="640" />
+  <meta property="og:image:alt" content="Gargantua, the black hole from Interstellar, with its lensed accretion disk" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@Happyuky7" />
+  <meta name="twitter:creator" content="@Happyuky7" />
+  <meta name="twitter:title" content="Black Hole Web · Gargantua, Interstellar style" />
+  <meta name="twitter:description" content="Look, a black hole. Fly around Gargantua, ray-traced through real Kerr spacetime in your browser." />
+  <meta name="twitter:image" content="%SITE_URL%/og-image.jpg" />
+  <meta name="twitter:image:alt" content="Gargantua, the black hole from Interstellar, with its lensed accretion disk" />
+
+  <!-- Structured data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "%SITE_URL%/#website",
+        "url": "%SITE_URL%/",
+        "name": "Black Hole Web",
+        "alternateName": "Gargantua Kerr Lab",
+        "inLanguage": ["en", "es", "ja", "zh-CN", "fr", "de", "pt-BR", "ko"],
+        "publisher": { "@id": "%SITE_URL%/#author" }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "%SITE_URL%/#app",
+        "name": "Black Hole Web · Interstellar Style",
+        "url": "%SITE_URL%/",
+        "description": "Real-time ray tracing of a Kerr black hole in the browser: gravitational lensing, photon ring, Doppler beaming and a Novikov–Thorne accretion disk, with a free 3D camera.",
+        "applicationCategory": "EducationalApplication",
+        "applicationSubCategory": "Physics simulation",
+        "operatingSystem": "Any (browser with WebGL2)",
+        "browserRequirements": "Requires JavaScript and WebGL2",
+        "softwareVersion": "%APP_VERSION%",
+        "datePublished": "2026-10-09",
+        "dateModified": "%BUILD_DATE%",
+        "image": "%SITE_URL%/og-image.jpg",
+        "screenshot": "%SITE_URL%/og-image.jpg",
+        "license": "https://opensource.org/licenses/MIT",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@id": "%SITE_URL%/#author" },
+        "sameAs": ["https://github.com/Happyuky7/Black-Hole-Web-Interstellar-Style"]
+      },
+      {
+        "@type": "Person",
+        "@id": "%SITE_URL%/#author",
+        "name": "Happyuky7",
+        "url": "https://happyuky7.com/",
+        "sameAs": ["https://github.com/Happyuky7", "https://x.com/Happyuky7"]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Crawlable summary for search engines and no-JS visitors; replaced by the
+       start screen as soon as the app boots. -->
+  <main id="seo" class="seo">
+    <h1>Black Hole Web: Gargantua from Interstellar, ray-traced in your browser</h1>
+    <p>Look, a black hole. Every pixel follows a photon through the curved, spinning spacetime of a Kerr black hole, so you see real gravitational lensing, the photon ring, the lensed accretion disk and relativistic Doppler beaming. Fly around it freely, switch between the film look and a full-physics mode, in eight languages.</p>
+    <p><a href="./physics.html">The physics of a black hole, step by step</a>: every equation behind the renderer, with 27 verified scientific sources.</p>
+    <p><a href="https://github.com/Happyuky7/Black-Hole-Web-Interstellar-Style">Source code on GitHub</a> · MIT License · by <a href="https://happyuky7.com/">Happyuky7</a></p>
+  </main>
+  <div id="app"></div>
+  <noscript><p style="color:#ccc;font:14px system-ui;padding:24px">This needs JavaScript and WebGL2. · Necesita JavaScript y WebGL2.</p></noscript>
+  <script type="module" src="/src/boot.js"></script>
+</body>
+</html>

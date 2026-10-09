@@ -1,0 +1,50 @@
+{
+  "name": "black-hole-web-interstellar-style",
+  "version": "1.0.0",
+  "description": "Look, a black hole. Gargantua from Interstellar, ray-traced through Kerr spacetime in the browser, with a full-physics mode.",
+  "license": "MIT",
+  "author": "Happyuky7 (https://happyuky7.com/)",
+  "homepage": "https://github.com/Happyuky7/Black-Hole-Web-Interstellar-Style#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Happyuky7/Black-Hole-Web-Interstellar-Style.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Happyuky7/Black-Hole-Web-Interstellar-Style/issues"
+  },
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.18.3",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "music": "node scripts/fetch-music.mjs",
+    "dev": "node scripts/fetch-music.mjs && vite",
+    "build": "node scripts/fetch-music.mjs && vite build",
+    "preview": "vite preview",
+    "serve": "node server.mjs",
+    "start": "pnpm build && node server.mjs",
+    "docker:build": "docker build -t black-hole-web .",
+    "docker:run": "docker run --rm -p 4173:4173 black-hole-web"
+  },
+  "keywords": [
+    "black-hole",
+    "interstellar",
+    "gargantua",
+    "kerr",
+    "general-relativity",
+    "ray-tracing",
+    "novikov-thorne",
+    "threejs",
+    "webgl",
+    "glsl"
+  ],
+  "dependencies": {
+    "katex": "^0.19.0",
+    "three": "^0.181.1"
+  },
+  "devDependencies": {
+    "vite": "^7.1.9"
+  }
+}

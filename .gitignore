@@ -1,0 +1,35 @@
+# dependencies & build output
+node_modules/
+dist/
+.vite/
+
+# logs, env, editors, OS
+*.log
+npm-debug.log*
+pnpm-debug.log*
+.env
+.env.*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Music is copyrighted: keep it local, never commit it.
+# Put your own file at public/audio/interstellar-main-theme.mp3
+*.mp3
+*.m4a
+*.ogg
+*.wav
+
+# Local tools used by scripts/fetch-music.mjs
+yt-dlp
+yt-dlp.exe
+ffmpeg
+ffmpeg.exe
+ffprobe
+ffprobe.exe
+
+# Host folder for the soundtrack when running with docker compose
+music/
+
+dist/**

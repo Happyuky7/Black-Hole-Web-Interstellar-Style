@@ -1,0 +1,18 @@
+services:
+  black-hole:
+    build:
+      context: .
+      args:
+        FETCH_MUSIC: "1"   # set to "0" to build without the soundtrack
+        SITE_URL: "https://gargantua.happyuky7.com"   # your public domain (SEO + social previews)
+    image: black-hole-web
+    ports:
+      - "4173:4173"
+    # If the build could not download the soundtrack (YouTube often blocks
+    # datacenter IPs), drop the mp3 in ./music on the host instead:
+    #   ./music/interstellar-main-theme.mp3
+    environment:
+      AUDIO_DIR: /music
+    volumes:
+      - ./music:/music:ro
+    restart: unless-stopped

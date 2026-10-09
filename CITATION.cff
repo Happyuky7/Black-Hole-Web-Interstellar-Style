@@ -1,0 +1,65 @@
+cff-version: 1.2.0
+message: "If you use this software or its physics write-up, please cite it as below."
+type: software
+title: "Black Hole Web: Interstellar Style"
+abstract: >-
+  Gargantua from Interstellar, ray-traced through Kerr spacetime in the browser.
+  Per-pixel Kerr null geodesics (RK4 in Mino time), a Novikov-Thorne blackbody
+  accretion disk with exact Doppler and gravitational redshift, and a
+  step-by-step derivation of every equation with 27 verified references.
+authors:
+  - alias: Happyuky7
+    website: "https://happyuky7.com/"
+version: 1.0.0
+date-released: 2026-10-09
+license: MIT
+repository-code: "https://github.com/Happyuky7/Black-Hole-Web-Interstellar-Style"
+keywords:
+  - black hole
+  - Kerr metric
+  - general relativity
+  - ray tracing
+  - Novikov-Thorne
+  - WebGL
+  - Interstellar
+references:
+  - type: article
+    title: "Gravitational lensing by spinning black holes in astrophysics, and in the movie Interstellar"
+    authors:
+      - family-names: James
+        given-names: Oliver
+      - family-names: von Tunzelmann
+        given-names: Eugénie
+      - family-names: Franklin
+        given-names: Paul
+      - family-names: Thorne
+        given-names: Kip S.
+    journal: "Classical and Quantum Gravity"
+    volume: 32
+    start: "065001"
+    year: 2015
+    doi: 10.1088/0264-9381/32/6/065001
+  - type: article
+    title: "Disk-Accretion onto a Black Hole. Time-Averaged Structure of Accretion Disk"
+    authors:
+      - family-names: Page
+        given-names: Don N.
+      - family-names: Thorne
+        given-names: Kip S.
+    journal: "The Astrophysical Journal"
+    volume: 191
+    start: 499
+    year: 1974
+    doi: 10.1086/152990
+  - type: article
+    title: "Null geodesics of the Kerr exterior"
+    authors:
+      - family-names: Gralla
+        given-names: Samuel E.
+      - family-names: Lupsasca
+        given-names: Alexandru
+    journal: "Physical Review D"
+    volume: 101
+    start: "044032"
+    year: 2020
+    doi: 10.1103/PhysRevD.101.044032
